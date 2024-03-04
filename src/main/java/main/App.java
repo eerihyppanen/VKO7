@@ -56,7 +56,7 @@ public class App
 
 
                     case 2:
-                    System.out.println("Anna opiskelijan nimi?");
+                    System.out.println("Anna opiskelijan nimi:");
                     String name = sc.nextLine();
                     System.out.println("Anna opiskelijan opiskelijanumero:");
                     String id = sc.nextLine();

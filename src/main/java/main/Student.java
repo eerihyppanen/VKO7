@@ -17,7 +17,7 @@ public class Student implements PrintInfo {
 
 
     public String getInformation() {
-        return name + " " + id;
+        return id + " " + name;
 
     }
 }
