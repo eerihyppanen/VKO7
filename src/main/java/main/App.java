@@ -81,13 +81,15 @@ public class App
                         
                     case 5:
 
-                    System.out.println("Mille kurssille haluat lisätä opiskelijan? Syötä kurssin numero:");
+                    
                     gifu.listCourses();
+                    System.out.println("Mille kurssille haluat lisätä opiskelijan? Syötä kurssin numero:");
                     int courseIndex = Integer.parseInt(sc.nextLine()); // vihdoin opin lyhentämään 
                                                                         //String>int yhteen riviin
                     Course selectedCourse = gifu.getCourse(courseIndex);
-                    System.out.println("Minkä opiskelijan haluat lisätä kurssille? Syötä opiskelijan numero:");
+                    
                     gifu.listStudents();
+                    System.out.println("Minkä opiskelijan haluat lisätä kurssille? Syötä opiskelijan numero:");
                     int studentIndex = Integer.parseInt(sc.nextLine());
                     Student selectedStudent = gifu.getStudent(studentIndex);
                     enrollment = new Enrollment(selectedStudent, selectedCourse);
