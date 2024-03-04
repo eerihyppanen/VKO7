@@ -64,13 +64,9 @@ public class Gifu {
     }
 
     
-    public ArrayList<Enrollment> getEnrollments(Course course) {
+    public void getEnrollments() {
             
-        for (int i = 0; i < enrollments.size(); i++) {
-            Enrollment enrollment = enrollments.get(i);
-        Student student = enrollment.getStudent();
-        System.out.println((i) + ") " + student.getInformation());
-        }
+    
         
     }
        
